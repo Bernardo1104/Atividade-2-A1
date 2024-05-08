@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class Main{
+  public static void main(String[] args){
+  Scanner scanner = new Scanner(System.in);
+//Faça um programa em Java, que calcule a área do terreno e permita ao usuário informar o valor em R$ do m2. Deverá ser verificado e acrescido os seguintes percentuais de acordo com a área do terreno:
+  //calcule área de um terreno retangular (área = altura * largura).
+  //Área de 100 a 300 m2 - 10%;
+  //Area de 301 a 600 m2 - 20%;
+  //Acima de 601 m2 - 30%;
+  //O programa deverá imprimir o valor do terreno e o valor total do terreno;
+   System.out.println("Digite a largura do terreno: ");
+    double largura = scanner.nextDouble();
+    System.out.println("Digite a altura do terreno: ");
+    double altura = scanner.nextDouble();
+    double area = largura * altura;
+    System.out.println("Digite o valor do metro quadrado: ");
+    double valor = scanner.nextDouble();
+    double valorTotal = area * valor;
+    if(area >= 100 && area <= 300);
+     valorTotal = valorTotal + 0.1;
+    if(area >= 301 && area <= 600);
+     valorTotal = valorTotal + 0.2;
+    if(area > 601);
+     valorTotal = valorTotal + 0.3;
+    System.out.println("O valor do terreno é: " + valorTotal);
+  }
+}
+  
